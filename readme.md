@@ -1,1 +1,2 @@
 BEEP_CLIENT 是Android手机端的代码
+Wait
