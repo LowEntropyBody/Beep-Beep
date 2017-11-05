@@ -9,7 +9,7 @@
 //使用ADC1,定时器3
 #define SOUND_PICK_NUM 5       //拾音器个数
 #define SAMPLE_FREQUENCY 20     //ADC采集频率kHZ,需要被1000整除
-#define SAMPLE_DURATION 200      //ADC采集持续时间，采集完做卷积判断声音到达时刻,ms
+#define SAMPLE_DURATION 150      //ADC采集持续时间，采集完做卷积判断声音到达时刻,ms
 #define SIGNAL_FREQUENCY 4      //声音的频率
 #define MODEL_PERIOD_NUM 10   //一个相关信号周期包含的正弦周期个数
 
@@ -17,13 +17,13 @@
 #define PI 3.1415927       //圆周率 
 #define SOUND_VELOCITY 34 //声速，单位：cm/ms
 
-////相关结果超过阈值的时候认为声音信号出现
+////相关结果超过阈值的时候认为声音信号出现（经验值）
 #define CORRELATION_THRESHOLD 0.5 //test
 #define TH0 3.0
-#define TH1 0.5
-#define TH2 0.5
+#define TH1 1.0
+#define TH2 0.8
 #define TH3 1.0
-#define TH4 1.0
+#define TH4 5.0
 
 /////////////////////////////////////////拾音器/////////////////////////////////////////
 /**

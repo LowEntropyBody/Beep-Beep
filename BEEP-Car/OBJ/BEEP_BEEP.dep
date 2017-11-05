@@ -42,7 +42,7 @@ I (..\HARDWARE\LED\led.h)(0x59B63F20)
 I (..\HARDWARE\ADC\adc.h)(0x598A8052)
 I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x57F606B6)
 I (..\HARDWARE\TIMER\timer.h)(0x59C72369)
-I (..\HARDWARE\BEEP\beep.h)(0x59F2A662)
+I (..\HARDWARE\BEEP\beep.h)(0x59FD54F6)
 I (..\HARDWARE\RUN\run.h)(0x59F1EBF0)
 I (..\HARDWARE\LOCATION\location.h)(0x59F2B208)
 I (..\HARDWARE\MSG\msg.h)(0x59F1E501)
@@ -156,7 +156,7 @@ I (..\FWLIB\inc\stm32f4xx_can.h)(0x53DBAFAE)
 I (..\FWLIB\inc\stm32f4xx_dac.h)(0x53DBAFAE)
 I (..\FWLIB\inc\stm32f4xx_dcmi.h)(0x53DBAFAE)
 I (..\FWLIB\inc\stm32f4xx_fsmc.h)(0x53DBAFAE)
-F (..\HARDWARE\ADC\adc.c)(0x59EF4EF5)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\HARDWARE\LED -I ..\HARDWARE\BEEP -I ..\FWLIB\inc -I ..\HARDWARE\ADC -I ..\HARDWARE\TIMER -I ..\HARDWARE\RUN -I ..\HARDWARE\LOCATION -I ..\HARDWARE\MSG --c99-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\Inc\ST\STM32F4xx-D__UVISION_VERSION="523" -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx-o ..\obj\adc.o --omf_browse ..\obj\adc.crf --depend ..\obj\adc.d)
+F (..\HARDWARE\ADC\adc.c)(0x59FD544D)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\HARDWARE\LED -I ..\HARDWARE\BEEP -I ..\FWLIB\inc -I ..\HARDWARE\ADC -I ..\HARDWARE\TIMER -I ..\HARDWARE\RUN -I ..\HARDWARE\LOCATION -I ..\HARDWARE\MSG --c99-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\Inc\ST\STM32F4xx-D__UVISION_VERSION="523" -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx-o ..\obj\adc.o --omf_browse ..\obj\adc.crf --depend ..\obj\adc.d)
 I (..\HARDWARE\ADC\adc.h)(0x598A8052)
 I (..\SYSTEM\sys\sys.h)(0x59842088)
 I (..\USER\stm32f4xx.h)(0x542BA484)
@@ -232,8 +232,8 @@ I (..\FWLIB\inc\stm32f4xx_dac.h)(0x53DBAFAE)
 I (..\FWLIB\inc\stm32f4xx_dcmi.h)(0x53DBAFAE)
 I (..\FWLIB\inc\stm32f4xx_fsmc.h)(0x53DBAFAE)
 I (..\HARDWARE\LED\led.h)(0x59B63F20)
-F (..\HARDWARE\BEEP\beep.c)(0x59F2AFB0)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\HARDWARE\LED -I ..\HARDWARE\BEEP -I ..\FWLIB\inc -I ..\HARDWARE\ADC -I ..\HARDWARE\TIMER -I ..\HARDWARE\RUN -I ..\HARDWARE\LOCATION -I ..\HARDWARE\MSG --c99-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\Inc\ST\STM32F4xx-D__UVISION_VERSION="523" -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx-o ..\obj\beep.o --omf_browse ..\obj\beep.crf --depend ..\obj\beep.d)
-I (..\HARDWARE\BEEP\beep.h)(0x59F2A662)
+F (..\HARDWARE\BEEP\beep.c)(0x59FD6B18)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\HARDWARE\LED -I ..\HARDWARE\BEEP -I ..\FWLIB\inc -I ..\HARDWARE\ADC -I ..\HARDWARE\TIMER -I ..\HARDWARE\RUN -I ..\HARDWARE\LOCATION -I ..\HARDWARE\MSG --c99-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\Inc\ST\STM32F4xx-D__UVISION_VERSION="523" -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx-o ..\obj\beep.o --omf_browse ..\obj\beep.crf --depend ..\obj\beep.d)
+I (..\HARDWARE\BEEP\beep.h)(0x59FD54F6)
 I (..\SYSTEM\sys\sys.h)(0x59842088)
 I (..\USER\stm32f4xx.h)(0x542BA484)
 I (..\CORE\core_cm4.h)(0x53C7D532)
@@ -313,7 +313,7 @@ I (..\FWLIB\inc\stm32f4xx_can.h)(0x53DBAFAE)
 I (..\FWLIB\inc\stm32f4xx_dac.h)(0x53DBAFAE)
 I (..\FWLIB\inc\stm32f4xx_dcmi.h)(0x53DBAFAE)
 I (..\FWLIB\inc\stm32f4xx_fsmc.h)(0x53DBAFAE)
-I (..\HARDWARE\BEEP\beep.h)(0x59F2A662)
+I (..\HARDWARE\BEEP\beep.h)(0x59FD54F6)
 I (..\SYSTEM\delay\delay.h)(0x59842070)
 I (..\HARDWARE\TIMER\timer.h)(0x59C72369)
 I (..\HARDWARE\ADC\adc.h)(0x598A8052)

@@ -46,7 +46,7 @@ void  Adc_Init(void)
 u16 Get_Adc(u8 ch)   
 {
 	  	//设置指定ADC的规则组通道，一个序列，采样时间
-	ADC_RegularChannelConfig(ADC1, ch, 1, ADC_SampleTime_3Cycles );	//ADC1,ADC通道,480个周期,提高采样时间可以提高精确度			    
+	ADC_RegularChannelConfig(ADC1, ch, 1, ADC_SampleTime_3Cycles );	//ADC1,ADC通道,3个周期,提高采样时间可以提高精确度			    
   
 	ADC_SoftwareStartConv(ADC1);		//使能指定的ADC1的软件转换启动功能	
 	 

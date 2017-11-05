@@ -95,7 +95,7 @@ void find_sound_point_2(struct SoundPick *sound_pick)
 				if(is_sound_appear(sound_pick->vals, j, sound_pick)) 
 					count++;
 			}
-			if (count >= 3) //检测出至少3个超过阈值的相关值，确定目标信号出现
+			if (count >= 5) //检测出至少5个超过阈值的相关值，确定目标信号出现（经验值）
 			{
 				sound_pick->sound_appear_flag = 1;
 				//寻找目标信号出现时间点：在第一个大于阈值的位置后找一个声音脉宽长度内的最大值，对应位置就是声音出现时刻
@@ -108,6 +108,7 @@ void find_sound_point_2(struct SoundPick *sound_pick)
 						max_appear_point = j;					
 					}			
 				}
+				//printf("max_appear_point = %d\n", max_appear_point);
 				sound_pick->sound_appear_time = ((float)(max_appear_point))/(((float)(sound_sense.sample_frequency)));
 				break;
 			}
@@ -209,12 +210,14 @@ u8 sound_sense_wait_cal()
 	}
 	
 	//test: 结果输出
+	/*
 	delay_ms(2000);
 	for(i = 0; i < SOUND_PICK_NUM; i++)
 	{
 		printf("sound_pick_%d\n", i);
 		vals_printf(sound_sense.sound_picks+i);
 	}
+	*/
 	
 	return temp;
 }
@@ -227,7 +230,7 @@ float* sound_arrival_time_to_distance()
 	{
 		sound_sense.distances[i] = ((sound_sense.sound_picks+i)->sound_appear_time)*(SOUND_VELOCITY);
 		sound_sense.sound_picks[i].sound_appear_time = -1;
-		printf("\ndistances_i = %f", sound_sense.distances[i]); //test
+		printf("\ndistances_%d = %f", i, sound_sense.distances[i]); //test
 	}
 	
 	return sound_sense.distances;
